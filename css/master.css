@@ -1,0 +1,264 @@
+/*
+Title:    Master styles for blainereport.com
+Author:   Blaine Fricks, blaine.fricks@live.com
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+      -ms-font-smoothing: antialiased;
+       -o-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+  -webkit-transition: 0.2s;
+     -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+          transition: 0.2s;
+}
+body,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  font-size: inherit;
+  vertical-align: baseline;
+}
+body {
+  font: normal 100% "Helvetica Neue","Helvetica","Arial",Sans-Serif;
+  color: #fff;
+  background-color: #5b6169;
+  text-align: left;
+}
+ul,
+li {
+  list-style: none;
+}
+/* Quick CSS
+--------------------------------------------- */
+.relative { position: relative;}
+.noPadding {padding: 0 !important;}
+.below48 {margin-bottom: 48px !important;}
+.full-height {height: 100%;}
+.bg-b1 {background-color: #454545;}
+/* Typography
+--------------------------------------------- */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+}
+h1, .h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+h2, .h2 {}
+h3, .h3 {}
+h4, .h4 {
+  margin-bottom: 0.9375em;
+}
+p, .p {
+  margin-bottom: 0.8em;
+}
+/* Links
+--------------------------------------------- */
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+  color: #00aeef;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color:
+}
+a img {border: none;}
+select {color: #959595;}
+/* Navigation
+--------------------------------------------- */
+.sliding-nav {
+  opacity: 1;
+}
+.primary-nav {
+  display: block;
+  position: fixed;
+  width: 250px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #222;
+  font-size: 1.2em;
+  line-height: 2.33em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: content-box;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.primary-nav a {
+  display: block;
+  width: 250px;
+  padding: 18px 24px 18px 24px;
+}
+.primary-nav a.selected {
+  background-color: #5b6169;
+}
+.primary-nav a:hover {
+  background-color: #333;
+}
+.tablet-nav {
+  height: 54px;
+  width: 100%;
+  background-color: #00aeef;
+}
+.hide-desktop {display: none;}
+.nav-label {
+  color: #fff;
+}
+/* Page
+--------------------------------------------- */
+footer {bottom: 0;}
+.wrap {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin-right: 0;
+  margin-left: 250px;
+  background-color: #5b6169;
+}
+.clearFix:before,
+.clearFix:after {
+  content: " ";
+  display: table;
+}
+.clearFix:after {
+  clear: both;
+}
+.line {
+  zoom: 1;
+}
+.unit {
+  overflow: hidden;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.lastUnit {
+  overflow: hidden;
+  float: none;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.group {
+  overflow: hidden;
+  float: left;
+}
+.lastGroup {
+  float: none;
+  width: auto;
+}
+.size1of8 {width: 12.5%;}
+.size1of4,
+.size2of8 {width: 25%;}
+.size1of3 {width: 33.33333333333333%;}
+.size3of8 {width: 37.5%;}
+.size1of2,
+.size2of4,
+.sixe4of8 {width: 50%;}
+.size5of8 {width: 62.5%;}
+.size2of3 {width: 66.66666666666667%;}
+.size3of4,
+.size6of8 {width: 75%;}
+.size7of8 {width: 87.5%;}
+.size1of1,
+.size2of2,
+.size3of3,
+.size4of4,
+.size8of8 {width: 100%;}
+.main {
+  bottom: 0;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.main-content {
+  top: 0;
+  padding: 0 0.9375em 0 0.9375em;
+}
+.main-section {
+  padding: 0 .9375em 0 .9375em;
+  margin-bottom: 66px;
+}
+.header {
+  margin-top: 1.875em;
+  margin-bottom: 2.5625em;
+  position: relative;
+  z-index: 5;
+}
+.header h1, .header h2 {
+  vertical-align: bottom;
+  line-height: 1.2em;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+.header h1+h2 {
+  margin-top: 0;
+  font-size: 2.5em;
+}
+.header h1 a {line-height: inherit;}
+.grid-filler, p.grid-filler {
+  text-align: center;
+  background-color: #00aeef;
+  margin-top: 1.2em;
+  padding: 20px;
+  font-weight: bold;
+}
+@media screen and (max-width: 64em) {
+  .wrap {
+    top: 54px;
+    margin-left: 0;
+  }
+  .sliding-nav {
+    opacity: 0;
+  }
+  .tablet-nav {
+    z-index: 26;
+    position: fixed;
+    top: 0;
+  }
+  .hide-desktop {
+    display: block;
+  }
+}
+@media screen and (max-width: 60em) {
+  .size1of8 {width: 50%;}
+}
+@media screen and (max-width: 40em) {
+  .size1of8,
+  .size1of4, .size2of8,
+  .size1of3,
+  .size3of8,
+  .size1of2, .size2of4, .sixe4of8,
+  .size5of8,
+  .size2of3,
+  .size3of4, .size6of8,
+  .size7of8,
+  .size1of1, .size2of2, .size3of3, .size4of4, .size8of8 {width: 100%;}
+}
