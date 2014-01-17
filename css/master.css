@@ -2,9 +2,7 @@
 Title:    Master styles for blainereport.com
 Author:   Blaine Fricks, blaine.fricks@live.com
 */
-*,
-*:before,
-*:after {
+*{
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -29,7 +27,7 @@ a {
   vertical-align: baseline;
 }
 body {
-  font: normal 100% "Helvetica Neue","Helvetica","Arial",Sans-Serif;
+  font: normal 100% "Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   color: #fff;
   background-color: #333;
   text-align: left;
@@ -38,19 +36,24 @@ ul,
 li {
   list-style: none;
 }
+/* Quick CSS
+--------------------------------------------- */
+.relative {
+  position: relative;
+}
 /* Typography
 --------------------------------------------- */
 h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4 {
+  font-family: "SegoeUI-Light","HelveticaNeue-Light","Helvetica-Light","Arial";
   margin: 0px;
   padding: 0px;
-  font-weight: bold;
+  font-weight: inherit;
 }
 h1, .h1 {
   font-size: 2.5em;
-  font-weight: bold;
 }
 h2, .h2 {}
 h3, .h3 {}
@@ -127,17 +130,25 @@ select {color: #959595;}
   position: relative;
   top: 0;
   bottom: 0;
-  margin-right: 0;
-  margin-left: 250px;
-  background-color: #5b6169;
+  margin: 0;
+  background-color: #333;
 }
-.clearFix:before,
-.clearFix:after {
-  content: " ";
-  display: table;
+.main {
+  bottom: 0;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
 }
-.clearFix:after {
-  clear: both;
+.main-content {
+  top: 0;
+  padding: 0 0.9375em 0 0.9375em;
+}
+.main-section {
+  padding: 0 .9375em 0 .9375em;
+  margin-bottom: 66px;
 }
 .line {
   zoom: 1;
@@ -181,23 +192,6 @@ select {color: #959595;}
 .size3of3,
 .size4of4,
 .size8of8 {width: 100%;}
-.main {
-  bottom: 0;
-  -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-}
-.main-content {
-  top: 0;
-  padding: 0 0.9375em 0 0.9375em;
-}
-.main-section {
-  padding: 0 .9375em 0 .9375em;
-  margin-bottom: 66px;
-}
 .header {
   margin-top: 1.875em;
   margin-bottom: 2.5625em;
@@ -223,10 +217,10 @@ select {color: #959595;}
   font-weight: bold;
 }
 @media screen and (max-width: 64em) {
-  .wrap {
+  /*.wrap {
     top: 54px;
     margin-left: 0;
-  }
+  }*/
   .sliding-nav {
     opacity: 0;
   }
