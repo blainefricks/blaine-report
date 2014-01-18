@@ -2,6 +2,7 @@
 Title:    Master styles for blainereport.com
 Author:   Blaine Fricks, blaine.fricks@live.com
 */
+::selection {background-color:#fff;}
 *{
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -38,16 +39,15 @@ li {
 }
 /* Quick CSS
 --------------------------------------------- */
-.relative {
-  position: relative;
-}
+.relative {position: relative;}
+.full-height{height: 100%}
 /* Typography
 --------------------------------------------- */
 h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4 {
-  font-family: "SegoeUI-Light","HelveticaNeue-Light","Helvetica-Light","Arial";
+  font-family: "SegoeUI-Light","HelveticaNeue-Light","Helvetica-Light","Arial",Sans-Serif;
   margin: 0px;
   padding: 0px;
   font-weight: inherit;
