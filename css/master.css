@@ -133,15 +133,6 @@ select {color: #959595;}
   margin: 0;
   background-color: #333;
 }
-.main, .content {
-  bottom: 0;
-  -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-}
 .main-content {
   top: 0;
   padding: 0 0.9375em 0 0.9375em;
@@ -162,7 +153,7 @@ select {color: #959595;}
   letter-spacing: -0.03em;
   margin-bottom: 6px;
 }
-.header h1+h2 {
+.header h1{
   margin-top: 0;
   font-size: 2.5em;
 }
