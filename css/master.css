@@ -127,13 +127,13 @@ select {color: #959595;}
 /* Page
 --------------------------------------------- */
 .wrap {
-  position: relative;
+  position: absolute;
   top: 0;
   bottom: 0;
   margin: 0;
   background-color: #333;
 }
-.main {
+.main, .content {
   bottom: 0;
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -147,9 +147,26 @@ select {color: #959595;}
   padding: 0 0.9375em 0 0.9375em;
 }
 .main-section {
-  padding: 0 .9375em 0 .9375em;
+  padding: .9375em 0 .9375em 0;
   margin-bottom: 66px;
 }
+.header {
+  margin-top: 1.875em;
+  margin-bottom: 2.5625em;
+  position: relative;
+  z-index: 5;
+}
+.header h1, .header h2 {
+  vertical-align: bottom;
+  line-height: 1.2em;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+.header h1+h2 {
+  margin-top: 0;
+  font-size: 2.5em;
+}
+.header h1 a {line-height: inherit;}
 .line {
   zoom: 1;
 }
@@ -174,6 +191,8 @@ select {color: #959595;}
   float: none;
   width: auto;
 }
+/* Grid System
+--------------------------------------------- */
 .size1of8 {width: 12.5%;}
 .size1of4,
 .size2of8 {width: 25%;}
@@ -192,23 +211,6 @@ select {color: #959595;}
 .size3of3,
 .size4of4,
 .size8of8 {width: 100%;}
-.header {
-  margin-top: 1.875em;
-  margin-bottom: 2.5625em;
-  position: relative;
-  z-index: 5;
-}
-.header h1, .header h2 {
-  vertical-align: bottom;
-  line-height: 1.2em;
-  letter-spacing: -0.03em;
-  margin-bottom: 6px;
-}
-.header h1+h2 {
-  margin-top: 0;
-  font-size: 2.5em;
-}
-.header h1 a {line-height: inherit;}
 .grid-filler, p.grid-filler {
   text-align: center;
   background-color: #00aeef;
