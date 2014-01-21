@@ -67,7 +67,6 @@ h4, .h4 {
   margin-bottom: 0.9375em;
 }
 p, .p {
-  max-width: 964px;
   margin-bottom: 0.8em;
 }
 /* Links
@@ -134,11 +133,16 @@ select {color: #959595;}
 /* Page
 --------------------------------------------- */
 .wrap {
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   margin: 0;
   background-color: #333;
+}
+.pageHolder {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .main-content {
   top: 0;
