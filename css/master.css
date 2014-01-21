@@ -4,6 +4,7 @@ Author:   Blaine Fricks, blaine.fricks@live.com
 */
 .current-version:after {
   content: "v0.1.9";
+  font: normal 0.5em "Consolas";
   color: #555;
   display: table;
   padding: 30px;
