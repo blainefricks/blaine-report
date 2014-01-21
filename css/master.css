@@ -2,6 +2,12 @@
 Title:    Master styles for blainereport.com
 Author:   Blaine Fricks, blaine.fricks@live.com
 */
+.current-version:after {
+  content: "v0.1.9";
+  color: #555;
+  display: table;
+  padding: 30px;
+}
 ::selection {background-color:#fff;}
 *{
   -webkit-box-sizing: border-box;
