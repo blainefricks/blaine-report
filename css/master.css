@@ -39,8 +39,14 @@ li {
 }
 /* Quick CSS
 --------------------------------------------- */
-.relative {position: relative;}
+.relative {position: relative !important;}
 .full-height{height: 100%}
+.selfClear:before,
+.selfClear:after {
+  content: " ";
+  display: table;
+}
+.selfClear:after {clear: both;}
 /* Typography
 --------------------------------------------- */
 h1, .h1,
@@ -61,6 +67,7 @@ h4, .h4 {
   margin-bottom: 0.9375em;
 }
 p, .p {
+  max-width: 964px;
   margin-bottom: 0.8em;
 }
 /* Links
@@ -137,10 +144,7 @@ select {color: #959595;}
   top: 0;
   padding: 0 0.9375em 0 0.9375em;
 }
-.main-section {
-  padding: .9375em 0 .9375em 0;
-  margin-bottom: 66px;
-}
+.main-section {margin-bottom: 66px;}
 .header {
   margin-top: 1.875em;
   margin-bottom: 2.5625em;
