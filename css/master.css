@@ -2,19 +2,6 @@
 Title:    Master styles for blainereport.com
 Author:   Blaine Fricks, blaine.fricks@live.com
 */
-.current-version:after {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  content: "v0.1.10";
-  font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
-  text-align: right;
-  color: #666;
-  display: table;
-  padding: 5px;
-  z-index: 999;
-}
-::selection {background-color:#fff;}
 *{
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -47,16 +34,52 @@ body {
   text-align: left;
 }
 ul, li {list-style: none;}
+.current-version:after {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  content: "0.2.11";
+  font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
+  text-align: right;
+  color: #666;
+  display: table;
+  padding: 5px;
+  z-index: 999;
+}
+span.current-version:after {
+  position: relative;
+  display: inline-block;
+  bottom: none;
+  right: none;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  padding: 0;
+}
+/*.copyright:after {
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  content: "\00a9 2014";
+  font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
+  text-align: right;
+  color: #666;
+  display: table;
+  padding: 5px;
+  z-index: 999;
+}*/
+::selection {background-color:#fff;}
 /* Quick CSS
 --------------------------------------------- */
 .relative {position: relative !important;}
 .full-height{height: 100%}
-.selfClear:before,
-.selfClear:after {
+.selfclear:before,
+.selfclear:after {
   content: " ";
   display: table;
 }
-.selfClear:after {clear: both;}
+.selfclear:after {clear: both;}
+.below60 {margin-bottom: 60px !important;}
 /* Typography
 --------------------------------------------- */
 h1, .h1,
@@ -64,9 +87,12 @@ h2, .h2,
 h3, .h3,
 h4, .h4 {font-family: "SegoeUI-Light","HelveticaNeue-Light","Helvetica-Light","Arial",Sans-Serif;}
 h1, .h1 {font-size: 2.5em;}
-h2, .h2 {font-size: 1.75em;}
-h3, .h3 {font-size: 1.25em;}
-h4, .h4 {margin-bottom: 0.9375em;}
+h2, .h2 {
+  font-size: 1.75em;
+  margin-bottom: .5em;
+}
+h3, .h3 {font-size: 1.25em;margin-bottom: .5em;}
+h4, .h4 {margin-bottom: 0.25em;}
 p, .p {margin-bottom: 0.8em;}
 /* Links
 --------------------------------------------- */
@@ -102,17 +128,12 @@ select {color: #959595;}
   overflow-y: auto;
   overflow-x: hidden;
   box-sizing: content-box;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 .primary-nav a {
   display: block;
   width: 250px;
   padding: 18px 24px 18px 24px;
+  color: #fff;
 }
 .primary-nav a.selected {
   background-color: #5b6169;
@@ -121,10 +142,15 @@ select {color: #959595;}
   background-color: #333;
 }
 .tablet-nav {
-  height: 54px;
   width: 100%;
-  background-color: #00aeef;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #222;
+  height: 50px;
+  z-index: 999;
 }
+.tablet-nav .line {height: inherit;}
 .hide-desktop {display: none;}
 .nav-label {
   color: #fff;
@@ -162,19 +188,19 @@ button {
   position: relative;
   top: 0;
   bottom: 0;
-  margin: 0;
+  margin: 0 0 15px 250px;
   background-color: #333;
 }
 .pageHolder {
   position: relative;
   max-width: 900px;
-  margin: 0 auto;
 }
 .main-content {
   top: 0;
   padding: 0 0.9375em 0 0.9375em;
 }
 .main-section {margin-bottom: 66px;}
+.sub-section {margin-bottom: 20px;}
 .header {
   margin-top: 1.875em;
   margin-bottom: 2.5625em;
@@ -254,21 +280,18 @@ button {
   font-weight: bold;
 }
 @media screen and (max-width: 64em) {
-  /*.wrap {
-    top: 54px;
+  .copyright:after {left: 0;}
+  .wrap {
+    top: 50px;
     margin-left: 0;
-  }*/
-  .sliding-nav {
-    opacity: 0;
   }
+  .sliding-nav {opacity: 0;}
   .tablet-nav {
     z-index: 26;
     position: fixed;
     top: 0;
   }
-  .hide-desktop {
-    display: block;
-  }
+  .hide-desktop {display: block;}
 }
 @media screen and (max-width: 60em) {
   .size1of8 {width: 50%;}
