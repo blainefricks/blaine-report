@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.12";
+  content: "0.2.13";
   font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -46,6 +46,7 @@ ul, li {list-style: none;}
   padding: 5px;
   z-index: 999;
 }
+span.current-version {line-height: inherit;}
 span.current-version:after {
   position: relative;
   display: inline-block;
