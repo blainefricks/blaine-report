@@ -1,10 +1,10 @@
 $(document).ready(function(){
   $('.menuIcon').click(function(){
-    if($('.wrap').hasClass('menu-active')){
-      $('.wrap').removeClass('menu-active');
+    if($('html').hasClass('menu-active ovf-hidden')){
+      $('html').removeClass('menu-active ovf-hidden');
     }
     else{
-      $('.wrap').addClass('menu-active');
+      $('html').addClass('menu-active ovf-hidden');
     }
   })
 })

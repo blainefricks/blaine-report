@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.21";
+  content: "0.2.22";
   font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -81,7 +81,6 @@ span.current-version:after {
 }
 .selfclear:after {clear: both;}
 .below60 {margin-bottom: 60px !important;}
-.ovf-hidden {overflow: hidden;}
 /* Typography
 --------------------------------------------- */
 h1, .h1,
@@ -116,6 +115,7 @@ select {color: #959595;}
 --------------------------------------------- */
 .sliding-nav {
   opacity: 1;
+  position: absolute;
 }
 .primary-nav {
   display: block;
@@ -303,12 +303,18 @@ button {
     top: 50px;
     margin-left: 0;
   }
+  .ovf-hidden .wrap{overflow:hidden;}
+  .ovf-hidden .pageHolder{overflow:none;}
+  .menu-active .pageHolder{
+    -webkit-transform:translate(250px, 0);
+        -ms-transform:translate(250px, 0);
+            transform:translate(250px, 0)
+  }
   .sliding-nav {opacity: 0;}
   .menu-active .sliding-nav {
     z-index: 5;
     opacity: 1;}
   .menu-active .primary-nav {top: 50px;}
-  .wrap.menu-active{margin-left: 250px;}
   .tablet-nav {
     z-index: 26;
     position: fixed;
