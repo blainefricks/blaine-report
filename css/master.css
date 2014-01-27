@@ -81,6 +81,7 @@ span.current-version:after {
 }
 .selfclear:after {clear: both;}
 .below60 {margin-bottom: 60px !important;}
+.ovf-hidden {overflow: hidden;}
 /* Typography
 --------------------------------------------- */
 h1, .h1,
@@ -303,6 +304,11 @@ button {
     margin-left: 0;
   }
   .sliding-nav {opacity: 0;}
+  .menu-active .sliding-nav {
+    z-index: 5;
+    opacity: 1;}
+  .menu-active .primary-nav {top: 50px;}
+  .wrap.menu-active{margin-left: 250px;}
   .tablet-nav {
     z-index: 26;
     position: fixed;

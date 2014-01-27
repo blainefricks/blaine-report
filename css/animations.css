@@ -1,6 +1,5 @@
 /* Animations (https://ux.mailchimp.com/patterns/animations)
 --------------------------------------------- */
-.pulse{width:40px}
 .slideDown{
   -webkit-animation:slideDown 1s ease .3s 1;
           animation:slideDown 1s ease .3s 1;
@@ -267,6 +266,7 @@
   100%{-webkit-transform:translateY(0) scaleY(1) scaleX(1)}
 }
 .pulse{
+  width: 40px;
   animation-name:pulse;
   -webkit-animation-name:pulse;
   animation-duration:1.5s;
