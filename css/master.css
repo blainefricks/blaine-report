@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.22";
+  content: "0.2.23";
   font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -81,6 +81,7 @@ span.current-version:after {
 }
 .selfclear:after {clear: both;}
 .below60 {margin-bottom: 60px !important;}
+.below48 {margin-bottom: 48px !important;}
 /* Typography
 --------------------------------------------- */
 h1, .h1,
@@ -95,6 +96,19 @@ h2, .h2 {
 h3, .h3 {font-size: 1.25em;margin-bottom: .5em;}
 h4, .h4 {margin-bottom: 0.25em;}
 p, .p {margin-bottom: 0.8em;}
+code {
+  font-size: 0.875em;
+  line-height: inherit;
+  font-family: Consolas,"Lucida Console",Courier,monospace;
+  word-spacing: normal;
+  word-wrap: break-word;
+  font-weight: 700;
+  border-radius: 3px;
+}
+.classname {
+  color: #ff4000;
+  font-weight: normal;
+}
 /* Links
 --------------------------------------------- */
 a,
@@ -297,6 +311,7 @@ button {
   padding: 20px;
   font-weight: bold;
 }
+.bg-b1 {background-color: #222;}
 @media screen and (max-width: 64em) {
   .copyright:after {left: 0;}
   .wrap {
@@ -304,7 +319,6 @@ button {
     margin-left: 0;
   }
   .ovf-hidden .wrap{overflow:hidden;}
-  .ovf-hidden .pageHolder{overflow:none;}
   .menu-active .pageHolder{
     -webkit-transform:translate(250px, 0);
         -ms-transform:translate(250px, 0);
