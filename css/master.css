@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.23";
+  content: "0.2.24";
   font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -95,7 +95,12 @@ h2, .h2 {
 }
 h3, .h3 {font-size: 1.25em;margin-bottom: .5em;}
 h4, .h4 {margin-bottom: 0.25em;}
-p, .p {margin-bottom: 0.8em;}
+p, .p {
+  /*max-width: 700px;*/
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  margin-bottom: 0.8em;
+}
 code {
   font-size: 0.875em;
   line-height: inherit;
@@ -225,7 +230,6 @@ button {
 }
 .pageHolder {
   position: relative;
-  max-width: 900px;
 }
 .main-content {
   top: 0;
@@ -308,8 +312,10 @@ button {
   text-align: center;
   background-color: #00aeef;
   margin-top: 1.2em;
+  margin-bottom: 1.2em;
   padding: 20px;
   font-weight: bold;
+  max-width: none;
 }
 .bg-b1 {background-color: #222;}
 @media screen and (max-width: 64em) {
