@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.31";
+  content: "0.2.32";
   font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -82,6 +82,10 @@ span.current-version:after {
 .selfclear:after {clear: both;}
 .below60 {margin-bottom: 60px !important;}
 .below48 {margin-bottom: 48px !important;}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
 /* Typography
 --------------------------------------------- */
 h1, .h1,
@@ -120,12 +124,15 @@ a:link,
 a:visited,
 a:active,
 a:hover {
-  color: #00aeef;
+  color: #08c;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease-out;
 }
 a:hover {
-  color:
+  color: #00aeef;
+
 }
 a img {border: none;}
 select {color: #959595;}
@@ -258,7 +265,7 @@ button:hover {
 }
 .main-content {
   top: 0;
-  padding: 0 0.9375em 0 0.9375em;
+  /*padding: 0 0.9375em 0 0.9375em;*/
 }
 .main-section {margin-bottom: 66px;}
 .sub-section {margin-bottom: 20px;}
