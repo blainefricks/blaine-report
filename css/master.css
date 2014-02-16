@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.30";
+  content: "0.2.31";
   font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -177,7 +177,6 @@ select {color: #959595;}
   top: 0;
   right: 0;
   left: 0;
-  background-color: #333;
   height: 50px;
   z-index: 999;
 }
@@ -190,6 +189,7 @@ select {color: #959595;}
   line-height: 50px;
   z-index: 26;
 }
+.tablet-nav.show {background-color: rgba(51,51,51,0.9);}
 .menu-active .tablet-nav {
   left: 250px;
   right: -250px;

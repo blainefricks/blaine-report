@@ -6,5 +6,16 @@ $(document).ready(function(){
     else{
       $('html').addClass('menu-active ovf-hidden');
     }
-  })
+  });
+ $(window).scroll(function() {
+   var $menu = $(".tablet-nav");
+   var $features = $('.main-content');
+   var window_offset = $features.offset().top - $(window).scrollTop();
+   if (window_offset < $menu.height()) {
+     $menu.addClass('show');
+   }
+   if (window_offset > $menu.height()) {
+     $menu.removeClass('show');
+   }
+ });
 })
