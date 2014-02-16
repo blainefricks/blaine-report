@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.29";
+  content: "0.2.30";
   font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -135,12 +135,13 @@ select {color: #959595;}
   opacity: 0;
   display: none;
   position: absolute;
+  left: 0;
+  z-index: 1;
 }
 .menu-active .sliding-nav {
   display: block;
   left: 0;
   opacity: 1;
-  z-index: 5;;
 }
 .primary-nav {
   display: block;
@@ -171,16 +172,12 @@ select {color: #959595;}
 .primary-nav a:hover {
   background-color: #333;
 }
-.menu-active .primary-nav {
-  top: 50px;
-}
 .tablet-nav {
   position: fixed;
-  width: 100%;
   top: 0;
   right: 0;
   left: 0;
-  background-color: #222;
+  background-color: #333;
   height: 50px;
   z-index: 999;
 }
@@ -192,6 +189,10 @@ select {color: #959595;}
   height: 50px;
   line-height: 50px;
   z-index: 26;
+}
+.menu-active .tablet-nav {
+  left: 250px;
+  right: -250px;
 }
 .menuIcon {
   position: relative;
@@ -221,7 +222,7 @@ button {
   text-align: center;  vertical-align: middle;
   text-transform: capitalize;
   margin-right: 18px;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   border-radius: 6px;
   -webkit-user-select: none;
       -ms-user-select: none;
@@ -237,15 +238,23 @@ button:hover {
 --------------------------------------------- */
 .wrap {
   position: relative;
-  max-width: 900px;
   height: 100%;
   top: 50px;
+  right: 0;
   bottom: 0;
-  margin: 0 auto 15px auto;
+  left: 0;
   background-color: #333;
+  z-index: 5;
+}
+.menu-active .wrap {
+  position: fixed;
+  left: 250px;
+  right: -250px;
 }
 .pageHolder {
   position: relative;
+  max-width: 900px;
+  margin: 0 auto 15px auto;
 }
 .main-content {
   top: 0;
@@ -338,16 +347,6 @@ footer {
   max-width: none;
 }
 .bg-b1 {background-color: #222;}
-@media screen and (max-width: 87.5em) {
-.menu-active .pageHolder{
-  -webkit-transform:translate(250px, 0);
-      -ms-transform:translate(250px, 0);
-          transform:translate(250px, 0)
-  }
-}
-@media screen and (max-width: 64em) {
-  .ovf-hidden .wrap{overflow:hidden;}
-}
 @media screen and (max-width: 60em) {
   .size1of8 {width: 50%;}
 }
