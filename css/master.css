@@ -2,7 +2,7 @@
 Title:    Master styles for blainereport.com
 Author:   Blaine Fricks, blaine.fricks@live.com
 */
-*{
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.37";
+  content: "0.2.38";
   font: normal 0.5em "Consolas","Open Sans","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -70,21 +70,49 @@ span.current-version:after {
   z-index: 999;
 }*/
 ::selection {background-color:#fff;}
-/* Quick CSS
+/* Shorthand classes
 --------------------------------------------- */
 .relative {position: relative !important;}
+.cloak {display: none;}
+.uncloak {display: block;}
 .full-height{height: 100%}
-.selfclear:before,
-.selfclear:after {
-  content: " ";
-  display: table;
-}
-.selfclear:after {clear: both;}
 .below60 {margin-bottom: 60px !important;}
 .below48 {margin-bottom: 48px !important;}
+/* Design-related snippets
+--------------------------------------------- */
 .disabled {
   pointer-events: none;
   opacity: 0.5;
+}
+/* Development-related snippets
+--------------------------------------------- */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}/* IE6/7 support */
+.ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.break {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+.ellipsis {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis; /* Required for IE8 */
+  -o-text-overflow: ellipsis; /* Required for Opera */
+  text-overflow: ellipsis;
 }
 /* Typography
 --------------------------------------------- */
