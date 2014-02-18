@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.36";
+  content: "0.2.37";
   font: normal 0.5em "Consolas","Open Sans","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -277,7 +277,6 @@ button:hover {
 .main-section {margin-bottom: 66px;}
 .sub-section {margin-bottom: 20px;}
 .header {
-  margin-top: 1.875em;
   margin-bottom: 2.5625em;
   position: relative;
   z-index: 5;

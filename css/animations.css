@@ -1,6 +1,8 @@
 /* Animations (https://ux.mailchimp.com/patterns/animations)
 --------------------------------------------- */
 .slideDown{
+  animation-name:slideDown;
+  -webkit-animation-name:slideDown;
   -webkit-animation:slideDown 1s ease .3s 1;
           animation:slideDown 1s ease .3s 1;
   visibility:visible !important
