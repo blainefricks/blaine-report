@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.35";
+  content: "0.2.36";
   font: normal 0.5em "Consolas","Open Sans","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -187,6 +187,7 @@ select {color: #959595;}
   right: 0;
   left: 0;
   height: 50px;
+  /*background-color: rgba(51,51,51,0.9);*/
   z-index: 999;
 }
 .tablet-nav .line {height: inherit;}
@@ -248,10 +249,12 @@ button:hover {
 .wrap {
   position: relative;
   height: 100%;
-  top: 50px;
+  width: 100%;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  padding-top: 50px;
   background-color: #333;
   z-index: 5;
 }
@@ -260,6 +263,9 @@ button:hover {
   left: 250px;
   right: -250px;
 }
+.homeHero {
+  text-align: center;
+}
 .pageHolder {
   position: relative;
   max-width: 900px;
@@ -267,7 +273,6 @@ button:hover {
 }
 .main-content {
   top: 0;
-  /*padding: 0 0.9375em 0 0.9375em;*/
 }
 .main-section {margin-bottom: 66px;}
 .sub-section {margin-bottom: 20px;}
