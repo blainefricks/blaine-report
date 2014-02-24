@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.38";
+  content: "0.2.39";
   font: normal 0.5em "Consolas","Open Sans","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -131,7 +131,7 @@ h3, .h3 {font-size: 1.25em;margin-bottom: .5em;}
 h4, .h4 {margin-bottom: 0.25em;font-weight: 400 !important;}
 p, .p {
   font-size: 0.9375em;
-  line-height: 1.6em;
+  line-height: 1.8em;
   margin-bottom: 0.8em;
 }
 code {
@@ -143,6 +143,7 @@ code {
   font-weight: 700;
   border-radius: 3px;
 }
+article {}
 .classname {
   color: #ff4000;
   font-weight: normal;
