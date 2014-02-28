@@ -28,7 +28,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   line-height: 1.5em;
 }
 body {
-  font: normal 100% "Open Sans","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
+  font: normal 100% "Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   color: #fff;
   background-color: #333;
   text-align: left;
@@ -38,8 +38,8 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.39";
-  font: normal 0.5em "Consolas","Open Sans","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
+  content: "0.2.40";
+  font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
   display: table;
@@ -57,18 +57,6 @@ span.current-version:after {
   text-align: inherit;
   padding: 0;
 }
-/*.copyright:after {
-  position: fixed;
-  bottom: 0;
-  left: 250px;
-  content: "\00a9 2014";
-  font: normal 0.5em "Consolas","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
-  text-align: right;
-  color: #666;
-  display: table;
-  padding: 5px;
-  z-index: 999;
-}*/
 ::selection {background-color:#fff;}
 /* Shorthand classes
 --------------------------------------------- */
@@ -120,7 +108,7 @@ b {font-weight: 700;}
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h4, .h4 {font-family: "Open Sans","SegoeUI-Light","HelveticaNeue-Light","Helvetica-Light","Arial",Sans-Serif;
+h4, .h4 {font-family: "Open Sans","HelveticaNeue-Light","Helvetica-Light","Arial",Sans-Serif;
 font-weight: 300;}
 h1, .h1 {font-size: 2.5em;}
 h2, .h2 {
@@ -256,7 +244,7 @@ button {
   padding: 0 18px;
   cursor: pointer;
   overflow: hidden;
-  font-family: "Open Sans","Segoe UI","Helvetica Neue","Helvetica","Arial",Sans-Serif;
+  font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   font-weight: 700;
   text-align: center;  vertical-align: middle;
   text-transform: capitalize;
@@ -355,6 +343,15 @@ button:hover {
   content: "Example";
   top: -30px;
 }
+.menu,
+.main,
+.events {
+  position: relative;
+  height: 100%;
+}
+.menu {background-color: #08c}
+.main {background-color: #333}
+.events {background-color: #fff}
 footer {
   position: relative;
   bottom: 1px;
