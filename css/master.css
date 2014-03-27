@@ -32,13 +32,14 @@ body {
   color: #fff;
   background-color: #333;
   text-align: left;
+  /*font-weight: 600;*/
 }
 ul, li {list-style: none;}
 .current-version:after {
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.42";
+  content: "0.2.43";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -206,6 +207,7 @@ select {color: #959595;}
   width: 250px;
   padding: 18px 24px 18px 24px;
   color: #fff;
+  font-weight: 600;
 }
 .primary-nav a.selected {
   background-color: #5b6169;
