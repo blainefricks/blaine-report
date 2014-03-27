@@ -52,7 +52,6 @@
       <div class="line main-section">
         <div class="sub-section unit size1of1">
           <h2>Grid Stystem</h2>
-          <p>When using the grid system, wrap the columns using a <code class="classname">line</code> and use <code class="classname">lastUnit</code> for the last column. Refer to <a href="http://oocss.org/grids_docs.html">OOCSS base classes</a> for more details on grid layout.</p>
         </div>
         <div class="sub-section unit size1of1 below48">
           <h4>Size 1 of 1</h4>
@@ -86,6 +85,24 @@
           <div class="unit size1of8 bg-b1"><p class="grid-filler">1/8</p></div>
           <div class="unit size1of8 bg-b1"><p class="grid-filler">1/8</p></div>
           <div class="lastUnit size1of8 bg-b1"><p class="grid-filler">1/8</p></div>
+        </div>
+        <div class="sub-section group size1of1">
+          <div class="unit size1of2">
+            <h4>Notes</h4>
+            <p>When using the grid system, wrap the columns using a <code class="cm-string">line</code> and use <code class="cm-string">lastUnit</code> for the last column. Refer to <a href="http://oocss.org/grids_docs.html">OOCSS base classes</a> for more details on grid layout.</p>
+          </div>
+          <div class="lastUnit size1of2">
+            <code class="code-snippet">
+            <div><span class="">&lt;<span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"line"</span>&gt;</span></div>
+            <div>&nbsp;&nbsp;<span class="">&lt;<span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"unit size1of3"</span>&gt;</span></div>
+            <div>&nbsp;&nbsp;<span class="">&lt;/<span class="cm-tag">div</span>&gt;</span></div>
+            <div>&nbsp;&nbsp;<span class="">&lt;<span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"unit size1of3"</span>&gt;</span></div>
+            <div>&nbsp;&nbsp;<span class="">&lt;/<span class="cm-tag">div</span>&gt;</span></div>
+            <div>&nbsp;&nbsp;<span class="">&lt;<span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"lastUnit size1of3"</span>&gt;</span></div>
+            <div>&nbsp;&nbsp;<span class="">&lt;/<span class="cm-tag">div</span>&gt;</span></div>
+            <div><span class="">&lt;/<span class="cm-tag">div</span>&gt;</span></div>
+            </code>
+          </div>
         </div>
       </div>
       <div class="line main-section">

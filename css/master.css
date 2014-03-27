@@ -38,7 +38,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.41";
+  content: "0.2.42";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -122,19 +122,34 @@ p, .p {
   line-height: 1.8em;
   margin-bottom: 0.8em;
 }
+article {}
+/* Code
+--------------------------------------------- */
 code {
   font-size: 0.875em;
   line-height: inherit;
   font-family: Consolas,"Lucida Console",Courier,monospace;
   word-spacing: normal;
   word-wrap: break-word;
-  font-weight: 700;
-  border-radius: 3px;
-}
-article {}
-.classname {
-  color: #ff4000;
   font-weight: normal;
+}
+.code-snippet {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #222;
+  overflow: scroll;
+  max-height: 300px;
+}
+.cm-tag {color: red;}
+.cm-attribute {color: yellow;}
+.cm-string {
+  color: #ff4000;
+  /*font-weight: normal;*/
 }
 /* Links
 --------------------------------------------- */
