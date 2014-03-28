@@ -39,7 +39,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.43";
+  content: "0.2.44";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -148,10 +148,7 @@ code {
 }
 .cm-tag {color: red;}
 .cm-attribute {color: yellow;}
-.cm-string {
-  color: #ff4000;
-  /*font-weight: normal;*/
-}
+.cm-string {color: #ff4000;}
 /* Links
 --------------------------------------------- */
 a,
@@ -303,6 +300,7 @@ button:hover {
 .pageHolder {
   position: relative;
   max-width: 900px;
+  min-width: 320px;
   margin: 0 auto 15px auto;
 }
 .main-content {
