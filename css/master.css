@@ -39,7 +39,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.44";
+  content: "0.2.45";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -228,6 +228,7 @@ select {color: #959595;}
   vertical-align: middle;
   height: 50px;
   line-height: 50px;
+  font-weight: 600;
   z-index: 26;
 }
 .tablet-nav.show {background-color: rgba(51,51,51,0.9);}
@@ -397,7 +398,7 @@ footer {
   margin-top: 1.2em;
   margin-bottom: 1.2em;
   padding: 20px;
-  font-weight: bold;
+  font-weight: 700;
   max-width: none;
 }
 .bg-b1 {background-color: #222;}
