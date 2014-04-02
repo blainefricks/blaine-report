@@ -39,7 +39,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.47";
+  content: "0.2.48";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -374,9 +374,13 @@ button:hover {
   position: relative;
   padding: 30px 0px;
   background-color: #222;
+  font-size: 0.9375em;
   color: #666;
 }
 .footer .pageHolder {margin-bottom: 0px;}
+.footer h4 {
+  font-weight: 600 !important;
+}
 .footer a {
   color: inherit;
 }
