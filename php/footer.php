@@ -44,4 +44,8 @@
     </div>
   </div>
 </div>';
+<<<<<<< HEAD
 <?php EOT; ?>
+=======
+<?php EOT; ?>
+>>>>>>> FETCH_HEAD
