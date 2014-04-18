@@ -43,9 +43,5 @@
       <a href="index.html">&copy2014 Blaine Report</a>
     </div>
   </div>
-</div>';
-<<<<<<< HEAD
+</div>;
 <?php EOT; ?>
-=======
-<?php EOT; ?>
->>>>>>> FETCH_HEAD
