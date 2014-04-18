@@ -1,4 +1,5 @@
 <?php echo <<< EOT ?>
+<div class="footer">
 <div class="pageHolder">
   <div class="line">
     <div class="unit size1of4">
@@ -43,5 +44,6 @@
       <a href="index.html">&copy2014 Blaine Report</a>
     </div>
   </div>
+</div>
 </div>;
 <?php EOT; ?>
