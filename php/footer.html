@@ -1,5 +1,4 @@
-<?php
-echo '
+<?php echo <<< EOT ?>
 <div class="pageHolder">
   <div class="line">
     <div class="unit size1of4">
@@ -45,4 +44,4 @@ echo '
     </div>
   </div>
 </div>';
-?>
+<?php EOT; ?>
