@@ -1,1 +1,0 @@
-<div class="current-version" onclick="location.href='versions.php'"></div>
