@@ -7,7 +7,7 @@
   <link rel="Stylesheet" type="text/css" href="./css/animations.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="./js/br.js"></script>
-  <title>Blaine Report</title>
+  <title>Blaine Report | Where I Report & I Decide</title>
 </head>
 <body id="top">
 <!-- Navigation -->
