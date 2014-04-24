@@ -15,9 +15,9 @@
       <div class="unit size1of4">
         <h4>Articles</h4>
         <ul>
-          <li><a href="#top">Link</a></li>
-          <li><a href="#top">Link</a></li>
-          <li><a href="#top">Link</a></li>
+          <li><a href="#top">All Articles</a></li>
+          <li><a href="#top">Movie Reviews</a></li>
+          <li><a href="#top">Politics</a></li>
           <li><a href="#top">Link</a></li>
         </ul>
       </div>
@@ -25,7 +25,7 @@
         <h4>About</h4>
         <ul>
           <li><a href="#top">Link</a></li>
-          <li><a href="#top">Link</a></li>
+          <li><a href="#top">Contact</a></li>
           <li><a href="#top">Link</a></li>
           <li><a href="ui-library.php">UI Library</a></li>
         </ul>
@@ -33,9 +33,9 @@
       <div class="lastUnit size1of4">
         <h4>Social</h4>
         <ul>
-          <li><a href="#top">Facebook</a></li>
-          <li><a href="#top">Twitter</a></li>
-          <li><a href="#top">Link</a></li>
+          <li><a href="http://www.facebook.com/blainereport" target="_blank">Facebook</a></li>
+          <li><a href="http://www.twitter.com/blainereport" target="_blank">Twitter</a></li>
+          <li><a href="#top" target="_blank">Newsletter</a></li>
           <li><a href="#top">Link</a></li>
         </ul>
       </div>

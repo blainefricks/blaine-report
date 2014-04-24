@@ -1,4 +1,4 @@
-<?php include './header.php'; ?>
+<?php include('header.php'); ?>
 <div class="main-content">
   <div class="line main-section">
     <div class="unit size1of1 header">

@@ -1,4 +1,4 @@
-<?php include './header.php'; ?>
+<?php include('header.php'); ?>
 <div class="homeHero">
   <div class="line">
     <div class="unit size1of1 header">
@@ -20,4 +20,4 @@
     </div>
   </div>
 </div>
-<?php include './footer.php'; ?>
+<?php include('footer.php'); ?>
