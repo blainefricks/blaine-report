@@ -5,7 +5,7 @@ Description: A custom theme for the BlaineReport.com web site
 Author: Blaine Fricks
 Email: blaine.fricks@live.com
 Date: April 2014
-Version: 0.2.58
+Version: 1.0
 Text Domain: blainereport
 */
 
@@ -46,7 +46,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.58";
+  content: "0.2.59";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
