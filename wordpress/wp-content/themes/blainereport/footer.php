@@ -1,5 +1,5 @@
-  </div>
-</div>
+  </div><!-- /Pageholder -->
+</div><!-- /Wrap -->
 <div class="footer">
   <div class="pageHolder">
     <div class="line">

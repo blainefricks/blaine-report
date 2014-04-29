@@ -8,9 +8,6 @@ Template Name: Blaine Report
 
 get_header(); ?>
 
-<div id="main-content" class="main-content">
-
-</div>
 <div class="homeHero">
   <div class="line">
     <div class="unit size1of1 header">
@@ -21,7 +18,8 @@ get_header(); ?>
     </div>
   </div>
 </div>
-<div class="main-content">
+
+<div id="main-content" class="main-content">
   <div class="line main-section">
     <div class="lastUnit size1of1 sub-section">
     <h2>Recent Stories</h2>

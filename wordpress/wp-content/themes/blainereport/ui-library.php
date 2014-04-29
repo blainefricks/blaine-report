@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<div class="main-content">
+
+<div id="main-content" class="main-content">
   <div class="line main-section">
     <div class="unit size1of1 header">
       <h1>UI Library</h1>
