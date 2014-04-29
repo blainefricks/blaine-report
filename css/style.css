@@ -1,5 +1,5 @@
 /*
-Theme Name: Blaine Report 1.0
+Theme Name: Blaine Report
 Theme URI: http://blainereport.com/
 Description: A custom theme for the BlaineReport.com web site
 Author: Blaine Fricks
@@ -46,7 +46,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.2.59";
+  content: "0.2.61";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
