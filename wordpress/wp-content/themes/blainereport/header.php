@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+/**
+ * The Header for our theme
+ *
+ * Displays all of the <head> section and everything up till <div class="pageHolder">
+ *
+ * @package BlaineReport
+ * @subpackage Blaine_Report
+ * @since Blaine Report 1.0
+ */
+?><!DOCTYPE html>
+<html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
