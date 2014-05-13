@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . 'header.php' ); ?>
 
 <div id="main-content" class="main-content">
   <div class="line main-section">
@@ -111,4 +111,4 @@
     </div>
   </div>
 </div>
-<?php get_footer(); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . 'footer.php' ); ?>
