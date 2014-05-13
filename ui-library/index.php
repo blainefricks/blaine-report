@@ -1,4 +1,4 @@
-<?php include( $_SERVER['DOCUMENT_ROOT'] . 'header.php' ); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/blainereport/header.php' ); ?>
 
 <div id="main-content" class="main-content">
   <div class="line main-section">
@@ -8,10 +8,10 @@
     <div class="lastUnit size1of1">
       <p>The Blaine Report UI Library is designed to help implement the design of the website.</p>
       <ul>
-        <li><a href="#headings">Headings</a></li>
-        <li><a href="#grids">Grid System</a></li>
-        <li><a href="#paragraphs">Paragraphs</a></li>
-        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="ui-library/#headings">Headings</a></li>
+        <li><a href="ui-library/#grids">Grid System</a></li>
+        <li><a href="ui-library/#paragraphs">Paragraphs</a></li>
+        <li><a href="ui-library/#buttons">Buttons</a></li>
       </ul>
     </div>
   </div>
@@ -111,4 +111,4 @@
     </div>
   </div>
 </div>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . 'footer.php' ); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/blainereport/footer.php' ); ?>

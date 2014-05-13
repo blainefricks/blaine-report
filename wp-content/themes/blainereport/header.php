@@ -26,7 +26,7 @@
 <div class="sliding-nav">
  <ul class="primary-nav">
    <li><a href=".">Home</a></li>
-   <li><a href="ui-library.php">UI Library</a></li>
+   <li><a href="ui-library">UI Library</a></li>
  </ul>
 </div>
 <div class="tablet-nav">
