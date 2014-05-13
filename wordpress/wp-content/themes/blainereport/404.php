@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div class="main-content">
   <div class="line main-section">
     <div class="lastUnit size1of1 sub-section">
@@ -7,4 +8,5 @@
     </div>
   </div>
 </div>
+
 <?php get_footer(); ?>
