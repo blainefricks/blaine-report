@@ -1,7 +1,8 @@
-<!-- Reference: http://code.tutsplus.com/tutorials/how-to-create-an-object-oriented-blog-using-php--net-1230 -->
 <?php
 
-class BlogPost {
+// Reference: http://code.tutsplus.com/tutorials/how-to-create-an-object-oriented-blog-using-php--net-1230
+class BlogPost
+{
   public $id;
   public $title;
   public $post;
@@ -9,41 +10,51 @@ class BlogPost {
   public $tags;
   public $datePosted;
 
-  function __construct($inId=null, $inTitle=null, $inPost=null, $inAuthorId=null, $inTags=null, $inDatePosted=null) {
-    if (!empty($inId)) {
+  function __construct($inId=null, $inTitle=null, $inPost=null, $inAuthorId=null, $inTags=null, $inDatePosted=null)
+  {
+    if (!empty($inId))
+    {
       $this->id = $inId;
     }
-    if (!empty($inTitle)) {
+    if (!empty($inTitle))
+    {
       $this->title = $inTitle;
     }
-    if (!empty($inPost)) {
+    if (!empty($inPost))
+    {
       $this->post = $inPost;
     }
 
-    if (!empty($inDatePosted)) {
+    if (!empty($inDatePosted))
+    {
       $splitDate = explode("-", $inDatePosted);
       $this->datePosted = $ splitDate[1] . "/" . $splitDate[2] . "/" . $splitDate[0];
-
     }
 
-    if (!empty($inAuthorId)) {
+    if (!empty($inAuthorId))
+    {
       $query = mysql_query("SELECT first_name, last_name FROM People WHERE id = " . $inAuthorId);
       $row = mysql_fetch_assoc($query);
       $this->author = $row["first_name"] . " " . $row["last_name"];
     }
 
     $postTags = "No Tags";
-    if (!empty($inId)) {
+    if (!empty($inId))
+    {
       $query = mysql_query("SELECT tags.* FROM blog_post_tags LEFT JOIN (tags) ON (blog_post_tags.tags_id = tags.id) WHERE blog_post_tags.blog_post_id = " . $inId);
       $tagArray = array();
       $tagIDArray = array();
-      while ($row = mysql_fetch_assoc($query)) {
+      while ($row = mysql_fetch_assoc($query))
+      {
         array_push($tagArray, $row["name"]);
         array_push($tagIDArray, $row["id"]);
       }
-      if (sizeof($tagArray) > 0) {
-        foreach ($tagArray as $tag) {
-          if ($postTags == "No Tags") {
+      if (sizeof($tagArray) > 0)
+      {
+        foreach ($tagArray as $tag)
+        {
+          if ($postTags == "No Tags")
+          {
             $postTags = $tag;
           }
           else {

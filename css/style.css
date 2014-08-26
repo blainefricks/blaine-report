@@ -14,10 +14,10 @@ Version: 1.0
       -ms-font-smoothing: antialiased;
        -o-font-smoothing: antialiased;
           font-smoothing: antialiased;
-  -webkit-transition: 0.2s;
+/*  -webkit-transition: 0.2s;
      -moz-transition: 0.2s;
       -ms-transition: 0.2s;
-          transition: 0.2s;
+          transition: 0.2s;*/
 }
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, textarea, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
@@ -42,7 +42,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "0.3.0";
+  content: "0.3.1.1";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;

@@ -12,6 +12,16 @@
 <div id="main-content" class="main-content">
   <div class="line main-section">
     <div class="lastUnit size1of1 sub-section">
+    start of php
+      <?php
+        include ($_SERVER['DOCUMENT_ROOT']."/includes/includes.php");
+        $blogPosts = GetBlogPosts();
+        foreach ($blogPosts as $post)
+        {
+          echo $post->title . "Post Title <br/>";
+        }
+      ?>
+      end of php
       <h2>Recent Stories</h2>
       <ol>
         <li><a href="posts">The Thing (2011)</a></li>
