@@ -4,7 +4,7 @@
 include ($_SERVER['DOCUMENT_ROOT'].'/includes/blogpost.php');
 
 // Database Connection
-$connection = mysql_connect("localhost", "username", "password") or die ("<p class="error">Sorry, we were unable to connect to the database server.</p>");
+$connection = mysql_connect("localhost", "root", "root") or die ("<p class="error">Sorry, we were unable to connect to the database server.</p>");
 $database = "blainereport_blog";
 mysql_select_db($database, $connection) or die ("<p class="error">Sorry, we were unable to connect to the database.</p>");
 
