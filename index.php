@@ -13,12 +13,12 @@
   <div class="line main-section">
     <div class="lastUnit size1of1 sub-section">
       <?php
-        include ($_SERVER['DOCUMENT_ROOT']."/includes/includes.php");
-        $blogPosts = GetBlogPosts();
-        foreach ($blogPosts as $post)
-        {
-          echo $post->title . "Post Title <br/>";
-        }
+        // include ($_SERVER['DOCUMENT_ROOT']."/includes/includes.php");
+        // $blogPosts = GetBlogPosts();
+        // foreach ($blogPosts as $post)
+        // {
+        //   echo $post->title . "Post Title <br/>";
+        // }
       ?>
       <h2>Recent Stories</h2>
       <ol>

@@ -1,12 +1,5 @@
 <?php
-
-// reference: http://code.tutsplus.com/tutorials/how-to-create-an-object-oriented-blog-using-php--net-1230
 include ($_SERVER['DOCUMENT_ROOT'].'/includes/blogpost.php');
-
-// Database Connection
-$connection = mysql_connect("localhost", "username", "password") or die ("<p class="error">Sorry, we were unable to connect to the database server.</p>");
-$database = "blainereport_blog";
-mysql_select_db($database, $connection) or die ("<p class="error">Sorry, we were unable to connect to the database.</p>");
 
 // Retrieve posts from database
 function GetBlogPosts($inId=null, $inTagId=null)
@@ -17,7 +10,7 @@ function GetBlogPosts($inId=null, $inTagId=null)
   }
   else if (!empty($inTagId))
   {
-    $query = mysql_query("SELECT blog_posts.* FROM blog_posts_tags LEFT JOIN (blog_posts) ON (blog_posts_tags.postID = blog_posts.id) WHERE blog_posts_tags.tagID =" . $tagID . " ORDER BY blog_posts.id DESC");
+    $query = mysql_query("SELECT blog_posts.* FROM blog_posts_tags LEFT JOIN (blog_posts) ON (blog_posts_tags.postID = blog_posts.id) WHERE blog_posts_tags.tagID = " . $tagID . " ORDER BY blog_posts.id DESC");
   }
   else
   {
@@ -32,5 +25,4 @@ function GetBlogPosts($inId=null, $inTagId=null)
   }
   return $postArray;
 }
-
 ?>
