@@ -9,7 +9,7 @@
 <?php
 
 // Create Connection
-$con = mysqli_connect("localhost", "root", "root", "blainereport_blog");
+$con = mysqli_connect("localhost", "root", "root");
 
 // Check Function
 if (mysqli_connect_errno()) {
@@ -30,13 +30,17 @@ if (mysqli_query($con, $sql)) {
 <p>
 
 <?php
+
+// Connect to 'blainereport_blog'
+$con = mysqli_connect("localhost", "root", "root", "blainereport_blog");
+
 // Create 'blog_posts' Table
 $sql = "CREATE TABLE blog_posts
 (
   PostID INT NOT NULL AUTO_INCREMENT,
   PRIMARY KEY(PostID),
-  PostTitle CHAR(15),
-  PostBody CHAR(15),
+  PostTitle CHAR(255),
+  PostBody TEXT,
   PostDate INT
 )";
 // Execute Query

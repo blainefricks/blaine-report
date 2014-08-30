@@ -2,11 +2,12 @@
 <div id="main-content" class="main-content">
   <div class="line main-section">
     <div class="lastUnit size1of1 sub-section">
+      <h1>Create New Post</h1>
       <form action="/posts/new-post/newpost.php" method="post">
         Title: <input type="text" name="posttitle">
         Body: <input type="textarea" name="postbody">
         Date: <input type="text" name="postdate">
-        <input type="submit">
+        <input type="submit" value="Create Post">
       </form>
     </div>
   </div>
