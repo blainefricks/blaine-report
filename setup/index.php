@@ -40,8 +40,12 @@ $sql = "CREATE TABLE blog_posts
   PostID INT NOT NULL AUTO_INCREMENT,
   PRIMARY KEY(PostID),
   PostTitle CHAR(255),
+  PostDate DATETIME,
   PostBody TEXT,
-  PostDate DATETIME
+  ReviewUps CHAR(255),
+  ReviewDowns CHAR(255),
+  ReviewReport CHAR(255),
+  PostURL TEXT
 )";
 // Execute Query
 if (mysqli_query($con,$sql)) {

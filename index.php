@@ -23,21 +23,21 @@
             echo "Failed to connect to MySQL: <br>" . mysqli_connect_error() . "<br>";
           }
 
-          $result = mysqli_query($con, "SELECT * FROM blog_posts");
+          $result = mysqli_query($con, "SELECT * FROM blog_posts ORDER BY PostID DESC");
 
           while ($row = mysqli_fetch_array($result)) {
             ?>
-            <a href="posts">
+            <a href="posts/<?php echo $row['PostURL'] ?>">
             <?php
             echo $row['PostTitle'];
             ?>
             </a>
+            </li>
             <?php
           }
 
           mysqli_close($con);
         ?>
-        </li>
       </ol>
     </div>
   </div>
