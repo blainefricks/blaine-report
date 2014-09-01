@@ -11,7 +11,7 @@
 // Create Connection
 $con = mysqli_connect("localhost", "root", "root");
 
-// Check Function
+// Check Connection
 if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: <br>" . mysqli_connect_error() . "<br>";
 }
@@ -41,7 +41,7 @@ $sql = "CREATE TABLE blog_posts
   PRIMARY KEY(PostID),
   PostTitle CHAR(255),
   PostBody TEXT,
-  PostDate INT
+  PostDate DATETIME
 )";
 // Execute Query
 if (mysqli_query($con,$sql)) {

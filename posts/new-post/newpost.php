@@ -14,11 +14,14 @@
       // escape variables for security
       $posttitle = mysqli_real_escape_string($con, $_POST['posttitle']);
       $postbody = mysqli_real_escape_string($con, $_POST['postbody']);
+      $reviewups = mysqli_real_escape_string($con, $_POST['reviewups']);
+      $reviewdowns = mysqli_real_escape_string($con, $_POST['reviewdowns']);
+      $reviewreport = mysqli_real_escape_string($con, $_POST['reviewreport']);
       $postdate = mysqli_real_escape_string($con, $_POST['postdate']);
 
       // Insert Data
-      $sql = "INSERT INTO blog_posts (PostTitle, PostBody, PostDate)
-      VALUES ('$posttitle', '$postbody', '$postdate')";
+      $sql = "INSERT INTO blog_posts (PostTitle, PostBody, ReviewUps, ReviewDowns, ReviewReport, PostDate)
+      VALUES ('$posttitle', '$postbody', '$reviewups', '$reviewdowns', '$reviewreport', '$postdate')";
 
       if (!mysqli_query($con,$sql)) {
         die('Error: ' . mysqli_error($con));
