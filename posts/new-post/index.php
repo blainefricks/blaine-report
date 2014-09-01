@@ -4,12 +4,38 @@
     <div class="lastUnit size1of1 sub-section">
       <h1>Create New Post</h1>
       <form action="/posts/new-post/newpost.php" method="post">
-        Title: <input type="text" name="posttitle">
-        Body: <input type="textarea" name="postbody">
-        Ups: <input type="text" name="reviewups">
-        Downs: <input type="text" name="reviewdowns">
-        Report: <input type="text" name="reviewreport">
-        Date: <input type="text" name="postdate">
+        <div class="input-holder">
+          <span>Title:</span>
+          <input type="text" name="posttitle">
+        </div>
+        <div class="input-holder">
+          <span>Body:</span>
+          <textarea type="text" name="postbody"></textarea>
+        </div>
+        <div class="input-holder">
+          <span>Ups:</span>
+          <input type="text" name="reviewups">
+        </div>
+        <div class="input-holder">
+          <span>Downs:</span>
+          <input type="text" name="reviewdowns">
+        </div>
+        <div class="input-holder">
+          <span>Report:</span>
+          <!-- <input type="text" name="reviewreport"> -->
+          <select name="reviewreport">
+            <option>Select a Grade</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>F</option>
+          </select>
+        </div>
+        <div class="input-holder">
+          <span>Date:</span>
+          <input type="text" name="postdate">
+        </div>
         <input type="submit" value="Create Post">
       </form>
     </div>

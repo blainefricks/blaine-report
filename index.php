@@ -14,7 +14,6 @@
     <div class="lastUnit size1of1 sub-section">
       <h2>Recent Stories</h2>
       <ol>
-        <li>
         <?php
           // Connect to 'blainereport_blog'
           $con = mysqli_connect("localhost", "root", "root", "blainereport_blog");
@@ -28,11 +27,12 @@
           while ($row = mysqli_fetch_array($result)) {
             ?>
             <a href="posts/<?php echo $row['PostURL'] ?>">
+            <li>
             <?php
             echo $row['PostTitle'];
             ?>
-            </a>
             </li>
+            </a>
             <?php
           }
 

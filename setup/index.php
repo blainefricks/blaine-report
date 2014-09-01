@@ -45,7 +45,8 @@ $sql = "CREATE TABLE blog_posts
   ReviewUps CHAR(255),
   ReviewDowns CHAR(255),
   ReviewReport CHAR(255),
-  PostURL TEXT
+  PostURL TEXT,
+  PostImg TEXT
 )";
 // Execute Query
 if (mysqli_query($con,$sql)) {
