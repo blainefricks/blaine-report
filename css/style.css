@@ -282,6 +282,7 @@ select {color: #959595;}
 
 /* Buttons
 --------------------------------------------- */
+input[type="submit"],
 button {
   display: inline-block;
   white-space: nowrap;
@@ -303,6 +304,7 @@ button {
   color: #fff;
   background-color: transparent;
 }
+input[type="submit"]:hover,
 button:hover {
   background-color: #fff;
   color: #333;
