@@ -26,6 +26,19 @@
       if (!mysqli_query($con,$sql)) {
         die('Error: ' . mysqli_error($con));
       }
+
+      // Create Folder Name
+      $postitle_in = $_POST['posttitle'];
+      $foldername = str_replace(" ", "-", $postitle_in) or die('Could not create foldername');
+
+      // Create Directory
+      mkdir($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $foldername);
+
+      // Create index.php in New Directory
+      $myfile = fopen($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $foldername . '/index.php', 'w') or die('unable to open file');
+      $txt = 'test';
+      fwrite($myfile, $txt)
+
       echo "<p>1 blog entry created</p>";
 
       mysqli_close($con);
