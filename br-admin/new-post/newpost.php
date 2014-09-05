@@ -19,26 +19,25 @@
       $reviewreport = mysqli_real_escape_string($con, $_POST['reviewreport']);
       $postdate = mysqli_real_escape_string($con, $_POST['postdate']);
 
+      // Create Folder Name
+      $postitle_in = $_POST['posttitle'];
+      $posturl = str_replace(" ", "-", $postitle_in) or die('Could not create posturl');
+
+      // Create Directory
+      mkdir($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $posturl);
+
       // Insert Data
-      $sql = "INSERT INTO blog_posts (PostTitle, PostBody, ReviewUps, ReviewDowns, ReviewReport, PostDate)
-      VALUES ('$posttitle', '$postbody', '$reviewups', '$reviewdowns', '$reviewreport', '$postdate')";
+      $sql = "INSERT INTO blog_posts (PostTitle, PostBody, ReviewUps, ReviewDowns, ReviewReport, PostDate, PostURL)
+      VALUES ('$posttitle', '$postbody', '$reviewups', '$reviewdowns', '$reviewreport', '$postdate', '$posturl')";
 
       if (!mysqli_query($con,$sql)) {
         die('Error: ' . mysqli_error($con));
       }
 
-      // Create Folder Name
-      $postitle_in = $_POST['posttitle'];
-      $foldername = str_replace(" ", "-", $postitle_in) or die('Could not create foldername');
-
-      // Create Directory
-      mkdir($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $foldername);
-
       // Create index.php in New Directory
-      $myfile = fopen($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $foldername . '/index.php', 'w') or die('unable to open file');
+      $myfile = fopen($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $posturl . '/index.php', 'w') or die('unable to open file');
       $txt = 'test';
-      fwrite($myfile, $txt)
-
+      fwrite($myfile, $txt);
       echo "<p>1 blog entry created</p>";
 
       mysqli_close($con);
