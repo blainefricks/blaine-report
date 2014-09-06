@@ -5,6 +5,15 @@
       <h1>New Post</h1>
       <form action="/br-admin/new-post/newpost.php" method="post">
         <div class="input-holder">
+          <span>Post Category:</span>
+          <select name="postcategory">
+            <option value="">Select a Category</option>
+            <option value="movie-reviews">Movie Reviews</option>
+            <option value="game-reviews">Game Reviews</option>
+            <option value="politics">Politics</option>
+          </select>
+        </div>
+        <div class="input-holder">
           <span>Title:</span>
           <input type="text" name="posttitle">
         </div>
@@ -22,7 +31,6 @@
         </div>
         <div class="input-holder">
           <span>Report:</span>
-          <!-- <input type="text" name="reviewreport"> -->
           <select name="reviewreport">
             <option value="">Select a Grade</option>
             <option value="A">A</option>

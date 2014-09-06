@@ -26,7 +26,7 @@
 
           while ($row = mysqli_fetch_array($result)) {
             ?>
-            <a href="posts/<?php echo $row['PostURL'] ?>">
+            <a href="<?php echo $row['PostURL'] ?>">
             <li>
             <?php
             echo $row['PostTitle'];

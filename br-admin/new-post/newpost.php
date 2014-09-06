@@ -12,6 +12,7 @@
       }
 
       // escape variables for security
+      $postcategory = mysqli_real_escape_string($con, $_POST['postcategory']);
       $posttitle = mysqli_real_escape_string($con, $_POST['posttitle']);
       $postbody = mysqli_real_escape_string($con, $_POST['postbody']);
       $reviewups = mysqli_real_escape_string($con, $_POST['reviewups']);
@@ -20,11 +21,12 @@
       $postdate = mysqli_real_escape_string($con, $_POST['postdate']);
 
       // Create Folder Name
-      $postitle_in = $_POST['posttitle'];
-      $posturl = str_replace(" ", "-", $postitle_in) or die('Could not create posturl');
+      // $strip_char_ascii = filter_var($posttitle,FILTER_FLAG_STRIP_LOW);
+      $foldername = str_replace(" ", "-", $posttitle);
+      $posturl = "posts/" . $postcategory . "/" . $foldername;
 
       // Create Directory
-      mkdir($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $posturl);
+      mkdir($_SERVER['DOCUMENT_ROOT'] . "/" . $posturl);
 
       // Insert Data
       $sql = "INSERT INTO blog_posts (PostTitle, PostBody, ReviewUps, ReviewDowns, ReviewReport, PostDate, PostURL)
@@ -35,8 +37,8 @@
       }
 
       // Create index.php in New Directory
-      $myfile = fopen($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $posturl . '/index.php', 'w') or die('unable to open file');
-      $txt = 'test';
+      $myfile = fopen($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $postcategory . "/" . $foldername . '/index.php', 'w') or die('<p>Unable to open file at </p><p><b>' . $posturl . "</b></p>");
+      $txt = 'This is a test';
       fwrite($myfile, $txt);
       echo "<p>1 blog entry created</p>";
 
