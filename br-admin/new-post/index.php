@@ -53,6 +53,10 @@
 <script type="text/javascript">
 function validateForm(){
     var isError = false;
+    if ($('select[name=postcategory]').val().trim().length == 0){
+       isError = true;
+       $('select[name=postcategory]').parent().addClass('reqError');
+    } else { $('select[name=postcategory]').parent().removeClass('reqError'); }
     if ($('input[name=posttitle]').val().trim().length == 0){
        isError = true;
        $('input[name=posttitle]').parent().addClass('reqError');

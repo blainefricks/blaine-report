@@ -38,7 +38,7 @@
 
       // Create index.php in New Directory
       $myfile = fopen($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $postcategory . "/" . $foldername . '/index.php', 'w') or die('<p>Unable to open file at </p><p><b>' . $posturl . "</b></p>");
-      $txt = 'This is a test';
+      $txt = $posttitle;
       fwrite($myfile, $txt);
       echo "<p>1 blog entry created</p>";
 
