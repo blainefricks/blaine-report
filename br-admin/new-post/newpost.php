@@ -38,9 +38,13 @@
 
       // Create index.php in New Directory
       $myfile = fopen($_SERVER['DOCUMENT_ROOT'] . "/posts/" . $postcategory . "/" . $foldername . '/index.php', 'w') or die('<p>Unable to open file at </p><p><b>' . $posturl . "</b></p>");
+
+      // Write to file
       $txt = $posttitle;
       fwrite($myfile, $txt);
       echo "<p>1 blog entry created</p>";
+      echo "<a href='br-admin'>Return to Dashboard<br>";
+      echo "<a href='br-admin/new-post'>Create Another Post";
 
       mysqli_close($con);
       ?>
