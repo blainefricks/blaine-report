@@ -42,7 +42,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "feature-BlogPost v0.3.1.16";
+  content: "feature-BlogPost v0.3.1.17";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -334,19 +334,13 @@ button:hover {
 .homeHero {
   text-align: center;
 }
-.pageHolder {
+.content {
   position: relative;
   max-width: 900px;
   min-width: 320px;
-  margin: 0 auto 15px auto;
+  margin: 0 auto;
+  padding: 50px 15px;
 }
-.main-content {
-  top: 0;
-}
-.main-section {
-  padding-top: 50px;
-  margin-bottom: 16px;}
-.sub-section {margin-bottom: 20px;}
 .header {
   margin-bottom: 2.5625em;
   position: relative;
@@ -413,7 +407,9 @@ button:hover {
   font-size: 0.9375em;
   color: #666;
 }
-.footer .pageHolder {margin-bottom: 0px;}
+.footer .content {
+  padding: 0px 15px;
+}
 .footer h4 {
   font-weight: 600 !important;
 }

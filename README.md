@@ -1,0 +1,1 @@
+To setup mySQL database go to br-admin/setup.

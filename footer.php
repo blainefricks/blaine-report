@@ -1,7 +1,6 @@
-  </div><!-- /Pageholder -->
 </div><!-- /Wrap -->
 <div class="footer">
-  <div class="pageHolder">
+  <div class="content">
     <div class="line">
       <div class="unit size1of4">
         <h4>Home</h4>
@@ -42,7 +41,7 @@
     </div>
     <div class="line" style="padding-top:30px">
       <div class="lastUnit size1of1">
-        <a href="index.html">&copy2014 Blaine Report</a>
+        <a href="">&copy2014 Blaine Report</a>
       </div>
     </div>
   </div>
