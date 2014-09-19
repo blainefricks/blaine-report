@@ -14,10 +14,9 @@
       <div class="unit size1of4">
         <h4>Articles</h4>
         <ul>
-          <li><a href="posts/all">All Articles</a></li>
           <li><a href="posts/movie-reviews">Movie Reviews</a></li>
+          <li><a href="posts/game-reviews">Game Reviews</a></li>
           <li><a href="posts/politics">Politics</a></li>
-          <li><a href="#top">Link</a></li>
         </ul>
       </div>
       <div class="unit size1of4">

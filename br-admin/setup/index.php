@@ -39,6 +39,7 @@ $sql = "CREATE TABLE blog_posts
 (
   PostID INT NOT NULL AUTO_INCREMENT,
   PRIMARY KEY(PostID),
+  PostCategory CHAR(255),
   PostTitle CHAR(255),
   PostDate DATETIME,
   PostBody TEXT,

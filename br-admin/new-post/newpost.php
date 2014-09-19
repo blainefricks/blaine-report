@@ -29,8 +29,8 @@
       mkdir($_SERVER['DOCUMENT_ROOT'] . "/" . $posturl);
 
       // Insert Data
-      $sql = "INSERT INTO blog_posts (PostTitle, PostBody, ReviewUps, ReviewDowns, ReviewReport, PostDate, PostURL)
-      VALUES ('$posttitle', '$postbody', '$reviewups', '$reviewdowns', '$reviewreport', '$postdate', '$posturl')";
+      $sql = "INSERT INTO blog_posts (PostCategory, PostTitle, PostBody, ReviewUps, ReviewDowns, ReviewReport, PostDate, PostURL)
+      VALUES ('$postcategory', '$posttitle', '$postbody', '$reviewups', '$reviewdowns', '$reviewreport', '$postdate', '$posturl')";
 
       if (!mysqli_query($con,$sql)) {
         die('Error: ' . mysqli_error($con));

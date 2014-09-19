@@ -2,11 +2,10 @@
 <section>
   <div class="content">
     <div class="line">
-      <div class="lastUnit size1of1">
-        <a class="button" href="br-admin/setup">Run Setup</a>
-        <a class="button" href="br-admin/new-post">New Post</a>
-        <h2>Blog Posts</h2>
-        <?php
+      <div class="lastUnit size1of1 sub-section">
+        <h2>Game Reviews</h2>
+        <ol>
+          <?php
             // Connect to 'blainereport_blog'
             $con = mysqli_connect("localhost", "root", "root", "blainereport_blog");
             // Check Connection
@@ -14,7 +13,7 @@
               echo "Failed to connect to MySQL: <br>" . mysqli_connect_error() . "<br>";
             }
 
-            $result = mysqli_query($con, "SELECT * FROM blog_posts ORDER BY PostID DESC");
+            $result = mysqli_query($con, "SELECT * FROM blog_posts WHERE PostCategory='game-reviews' ORDER BY PostID DESC");
 
             while ($row = mysqli_fetch_array($result)) {
               ?>
@@ -25,13 +24,14 @@
               ?>
               </li>
               </a>
-              <a href="br-admin/deletepostid=<?php echo $row['PostID'] ?>" class="delete-post">Delete</a>
               <?php
             }
+
             mysqli_close($con);
           ?>
+        </ol>
       </div>
     </div>
   </div>
-</section>
+</div>
 <?php include ($_SERVER['DOCUMENT_ROOT']."/footer.php"); ?>

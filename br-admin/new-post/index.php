@@ -8,8 +8,8 @@
           <span>Post Category:</span>
           <select name="postcategory">
             <option value="">Select a Category</option>
-            <option value="movie-reviews">Movie Reviews</option>
-            <option value="game-reviews">Game Reviews</option>
+            <option value="movie-reviews">Movie Review</option>
+            <option value="game-reviews">Game Review</option>
             <option value="politics">Politics</option>
           </select>
         </div>
