@@ -19,3 +19,26 @@ $(document).ready(function(){
    }
  });
 })
+
+function changeHeight() {
+  var windowHeight = $(window).height();
+  var footerHeight = $(".footer").height();
+  var tabletNav = $(".tablet-nav").height();
+  var wrap = $(".wrap");
+
+  wrap.css({
+    "min-height" : windowHeight - footerHeight - tabletNav + 'px',
+  })
+}
+window.addEventListener('resize', changeHeight);
+changeHeight();
+
+// Detel Post Page and Database Entry
+function deletePost(post_id)
+{
+  var delete_post_id = "span" + "#" + "deletepost-" + post_id
+
+  $(delete_post_id).click(function(){
+    alert("This will delete Post ID " + post_id)
+  });
+}

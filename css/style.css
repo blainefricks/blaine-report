@@ -42,7 +42,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "feature-BlogPost v0.3.1.18";
+  content: "feature-BlogPost v0.3.1.19";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -62,6 +62,7 @@ span.current-version:after {
   padding: 0;
 }
 ::selection {background-color:#fff;}
+
 /* Shorthand classes
 --------------------------------------------- */
 .relative {position: relative !important;}
@@ -70,12 +71,14 @@ span.current-version:after {
 .full-height{height: 100%}
 .below60 {margin-bottom: 60px !important;}
 .below48 {margin-bottom: 48px !important;}
+
 /* Design-related snippets
 --------------------------------------------- */
 .disabled {
   pointer-events: none;
   opacity: 0.5;
 }
+
 /* Development-related snippets
 --------------------------------------------- */
 .clearfix:before,
@@ -106,6 +109,7 @@ span.current-version:after {
   -o-text-overflow: ellipsis; /* Required for Opera */
   text-overflow: ellipsis;
 }
+
 /* Typography
 --------------------------------------------- */
 b {font-weight: 700;}
@@ -130,6 +134,7 @@ p, .p {
   margin-bottom: 0.8em;
 }
 article {}
+
 /* Code
 --------------------------------------------- */
 code {
@@ -156,6 +161,7 @@ code {
 .cm-tag {color: red;}
 .cm-attribute {color: yellow;}
 .cm-string {color: #ff4000;}
+
 /* Links
 --------------------------------------------- */
 a,
@@ -174,6 +180,7 @@ a:hover {
 }
 a img {border: none;}
 select {color: #959595;}
+
 /* Navigation
 --------------------------------------------- */
 .sliding-nav {
@@ -314,6 +321,7 @@ button:hover {
   background-color: #fff;
   color: #333;
 }
+
 /* Page
 --------------------------------------------- */
 .wrap {
@@ -402,6 +410,46 @@ button:hover {
 .menu {background-color: #08c}
 .main {background-color: #333}
 .events {background-color: #fff}
+
+/* Dashboard
+--------------------------------------------- */
+li.post-listing {
+  position: relative;
+  padding: 15px 0px;
+  border-bottom: 1px dashed #444;
+}
+li.post-listing:last-child {border-bottom: none;}
+span.delete-post {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  color: #08c;
+  cursor: pointer;
+}
+span.delete-post:hover {color: #00aeef;}
+li.post-listing:hover span.delete-post {opacity: 1;}
+
+/* Home
+--------------------------------------------- */
+ol.blog-posts {
+  margin-bottom: 60px;
+}
+ol.blog-posts a {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  padding: 5px;
+}
+ol.blog-posts a li {
+  padding: 20px;
+  background-color: #222;
+  border-radius: 6px;
+  min-height: 100px;
+}
+
+/* Footer
+--------------------------------------------- */
 .footer {
   position: relative;
   padding: 30px 0px;

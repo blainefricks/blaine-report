@@ -15,8 +15,7 @@
   <div class="content">
     <div class="line">
       <div class="lastUnit size1of1 sub-section">
-        <h2>Recent Stories</h2>
-        <ol>
+        <ol class="blog-posts">
           <?php
             // Connect to 'blainereport_blog'
             $con = mysqli_connect("localhost", "root", "root", "blainereport_blog");
@@ -41,6 +40,12 @@
 
             mysqli_close($con);
           ?>
+          <a>
+            <li></li>
+          </a>
+          <a>
+            <li></li>
+          </a>
         </ol>
       </div>
     </div>
