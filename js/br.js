@@ -9,7 +9,7 @@ $(document).ready(function(){
   });
  $(window).scroll(function() {
    var $menu = $(".tablet-nav");
-   var $features = $('.main-content');
+   var $features = $('section');
    var window_offset = $features.offset().top - $(window).scrollTop();
    if (window_offset < $menu.height()) {
      $menu.addClass('show');
@@ -33,7 +33,7 @@ function changeHeight() {
 window.addEventListener('resize', changeHeight);
 changeHeight();
 
-// Detel Post Page and Database Entry
+// Delete Post Page and Database Entry
 function deletePost(post_id)
 {
   var delete_post_id = "span" + "#" + "deletepost-" + post_id

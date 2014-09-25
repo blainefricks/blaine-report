@@ -34,7 +34,7 @@ if (isset($config['base_url'])) {
  <div class="line selfclear">
    <div>
      <a><span class="menuIcon"></span></a>
-     <a href="">Blaine Report</a>
+     <a href=""><img class="nav-br-logo" src="assets/logo-blainereport-white.png"></a>
    </div>
  </div>
 </div>

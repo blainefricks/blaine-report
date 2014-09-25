@@ -42,7 +42,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "feature-BlogPost v0.3.1.19";
+  content: "feature-BlogPost v0.3.1.20";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -257,6 +257,11 @@ select {color: #959595;}
   background-image: url('../assets/icons/ic_menu.png');
   background-position: 12.5px 17px;
   background-repeat: no-repeat;
+}
+img.nav-br-logo {
+  height: 50px;
+  width: 140px;
+  padding: 10px 0px;
 }
 .hide-desktop {display: none;}
 .nav-label {

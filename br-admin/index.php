@@ -24,7 +24,7 @@
           echo $row['PostTitle'];
           ?>
           </a>
-          <span class="delete-post" id="deletepost-<?php echo $row['PostID'] ?>" onClick="deletePost(<?php echo $row['PostID'] ?>)">Delete</span>
+          <span class="delete-post" onClick="deletePost(<?php echo $row['PostID'] ?>)" id="deletepost-<?php echo $row['PostID'] ?>">Delete</span>
           </li>
         <?php
           }

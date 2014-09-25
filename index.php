@@ -2,12 +2,7 @@
 <section class="homeHero">
   <div class="content">
     <div class="line">
-      <div class="unit size1of1 header">
-        <h1>Blaine Report</h1>
-      </div>
-      <div class="lastUnit size1of1">
-        <p>Where I Report & I Decide</p>
-      </div>
+
     </div>
   </div>
 </section>
