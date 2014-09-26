@@ -6,7 +6,7 @@
         <h1>New Post</h1>
         <form action="/br-admin/new-post/newpost.php" method="post">
           <div class="input-holder">
-            <span>Post Category:</span>
+            <label>Post Category:</label>
             <select name="postcategory">
               <option value="category">--Select a Category--</option>
               <option value="movie-reviews">Movie Review</option>
@@ -15,23 +15,27 @@
             </select>
           </div>
           <div class="input-holder">
-            <span>Title:</span>
+            <label>Picture:</label>
+            <input type="file" name="postpicture">
+          </div>
+          <div class="input-holder">
+            <label>Title:</label>
             <input type="text" name="posttitle">
           </div>
           <div class="input-holder">
-            <span>Body:</span>
+            <label>Body:</label>
             <textarea type="text" name="postbody"></textarea>
           </div>
           <div class="input-holder">
-            <span>Ups:</span>
+            <label>Ups:</label>
             <input type="text" name="reviewups">
           </div>
           <div class="input-holder">
-            <span>Downs:</span>
+            <label>Downs:</label>
             <input type="text" name="reviewdowns">
           </div>
           <div class="input-holder">
-            <span>Report:</span>
+            <label>Report:</label>
             <select name="reviewreport">
               <option value="">Select a Grade</option>
               <option value="A">A</option>
@@ -42,7 +46,7 @@
             </select>
           </div>
           <div class="input-holder">
-            <span>Date:</span>
+            <label>Date:</label>
             <input type="text" name="postdate">
           </div>
           <input type="submit" value="Create Post">

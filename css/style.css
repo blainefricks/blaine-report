@@ -42,7 +42,7 @@ ul, li {list-style: none;}
   position: fixed;
   bottom: 0;
   right: 0;
-  content: "feature-BlogPost v0.3.1.20";
+  content: "feature-BlogPost v0.3.1.21";
   font: normal 0.5em "Consolas","Open Sans","Helvetica Neue","Helvetica","Arial",Sans-Serif;
   text-align: right;
   color: #666;
@@ -273,7 +273,7 @@ img.nav-br-logo {
 .input-holder {
   margin-bottom: 30px;
 }
-.input-holder span {
+.input-holder label {
   display: block;
   margin-bottom: 15px;
 }
