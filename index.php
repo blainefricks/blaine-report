@@ -12,12 +12,6 @@
       <div class="lastUnit size1of1 sub-section">
         <ol class="blog-posts">
           <?php
-            // Connect to 'blainereport_blog'
-            $con = mysqli_connect("localhost", "root", "root", "blainereport_blog");
-            // Check Connection
-            if (mysqli_connect_errno()) {
-              echo "Failed to connect to MySQL: <br>" . mysqli_connect_error() . "<br>";
-            }
 
             $result = mysqli_query($con, "SELECT * FROM blog_posts ORDER BY PostID DESC");
 

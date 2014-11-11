@@ -4,7 +4,7 @@
     <div class="lastUnit size1of1 sub-section">
       <?php
       // Create Connection
-      $con = mysqli_connect("localhost", "root", "root", "blainereport_blog");
+      $con = mysqli_connect($host,$username,$password,$database);
 
       // Check Function
       if (mysqli_connect_errno()) {

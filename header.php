@@ -7,8 +7,23 @@ $webCtx = basename(dirname(__FILE__));
 $pos = strpos( $_SERVER['REQUEST_URI'], $webCtx);
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http';
 $baseUrl = $protocol . "://" . $_SERVER['HTTP_HOST'] . substr($_SERVER['REQUEST_URI'], 0, $pos) . $webCtx . "/";
+
 if (isset($config['base_url'])) {
  $baseUrl = $config['base_url'];
+}
+
+// get the database connection info
+$host     = $config['host'];
+$username = $config['username'];
+$password = $config['password'];
+$database  = $config['database'];
+
+// Create Connection
+$con = mysqli_connect($host,$username,$password,$db_name);
+
+// Check Connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: <br>" . mysqli_connect_error() . "<br>";
 }
 ?>
 <!DOCTYPE html>
