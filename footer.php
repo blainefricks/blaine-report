@@ -40,7 +40,7 @@
     </div>
     <div class="line" style="padding-top:30px">
       <div class="lastUnit size1of1">
-        <a href="">&copy2014 Blaine Report</a>
+        <a href="<?php echo $baseUrl ?>">&copy2014 Blaine Report</a>
       </div>
     </div>
   </div>
@@ -52,3 +52,8 @@
 
 </body>
 </html>
+<?php
+
+mysqli_close($con);
+
+?>

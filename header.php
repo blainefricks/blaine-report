@@ -1,4 +1,7 @@
 <?php
+
+error_reporting(E_ALL); ini_set('display_errors', 'On');
+
 // configuration constants
 $config = parse_ini_file("config/blainereport.config");
 
@@ -13,13 +16,13 @@ if (isset($config['base_url'])) {
 }
 
 // get the database connection info
-$host     = $config['host'];
-$username = $config['username'];
-$password = $config['password'];
-$database  = $config['database'];
+$host    = $config['host'];
+$db_usr  = $config['username'];
+$db_pw   = $config['password'];
+$db_name = $config['database'];
 
 // Create Connection
-$con = mysqli_connect($host,$username,$password,$db_name);
+$con = mysqli_connect($host,$db_usr,$db_pw,$db_name);
 
 // Check Connection
 if (mysqli_connect_errno()) {
@@ -40,7 +43,7 @@ if (mysqli_connect_errno()) {
 <!-- Navigation -->
 <div class="sliding-nav">
  <ul class="primary-nav">
-   <li><a href="">Home</a></li>
+   <li><a href="<?php echo $baseUrl ?>">Home</a></li>
    <li><a href="ui-library">UI Library</a></li>
    <li><a href="br-admin">Dashboard</a></li>
  </ul>
@@ -49,7 +52,7 @@ if (mysqli_connect_errno()) {
  <div class="line selfclear">
    <div>
      <a><span class="menuIcon"></span></a>
-     <a href=""><img class="nav-br-logo" src="assets/logo-blainereport-white.png"></a>
+     <a href="<?php echo $baseUrl ?>"><img class="nav-br-logo" src="assets/logo-blainereport-white.png"></a>
    </div>
  </div>
 </div>

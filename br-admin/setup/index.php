@@ -32,7 +32,7 @@ if (mysqli_query($con, $sql)) {
 <?php
 
 // Connect to 'blainereport_blog'
-$con = mysqli_connect("localhost", "root", "root", "blainereport_blog");
+$con = mysqli_connect($host,$db_usr,$db_pw,$db_name);
 
 // Create 'blog_posts' Table
 $sql = "CREATE TABLE blog_posts
@@ -52,6 +52,24 @@ $sql = "CREATE TABLE blog_posts
 // Execute Query
 if (mysqli_query($con,$sql)) {
   echo "Table blog_posts created successfully";
+}else {
+  echo "Error creating table:<br> " . mysqli_error($con) . "<br>";
+}
+
+// Create 'users' Table
+$sql = "CREATE TABLE users
+(
+  UserID INT NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY(UserId),
+  Username CHAR(255),
+  Password CHAR(255),
+  Email CHAR(255),
+  Privilege CHAR(255)
+) AUTO_INCREMENT=1100";
+
+// Execute Query
+if (mysqli_query($con,$sql)) {
+  echo "Table users created successfully";
 }else {
   echo "Error creating table:<br> " . mysqli_error($con) . "<br>";
 }
